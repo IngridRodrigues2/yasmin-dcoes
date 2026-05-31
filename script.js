@@ -148,7 +148,7 @@ function enviarWhatsApp() {
   const pag  = document.querySelector('input[name="pagamento"]:checked')?.value || "PIX";
   const total = calcTotal();
 
-  let msg = "🍫 *PEDIDO — Doceria da Cris* 🍫\n";
+  let msg = "🍫 *PEDIDO — Yasmin Doces* 🍫\n";
   msg += "━━━━━━━━━━━━━━━━━━━━\n";
   if (nome) msg += `👤 *Nome:* ${nome}\n`;
   msg += "\n🛒 *Itens do pedido:*\n";
