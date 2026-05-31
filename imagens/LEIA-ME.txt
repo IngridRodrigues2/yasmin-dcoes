@@ -1,0 +1,18 @@
+📁 PASTA DE IMAGENS — Doceria da Cris
+
+Substitua cada arquivo abaixo pela foto real do produto.
+Mantenha o mesmo nome de arquivo!
+
+Produtos e seus arquivos:
+- trufa-ninho.jpg
+- trufa-pacoca.jpg
+- trufa-brigadeiro.jpg
+- trufa-coco.jpg
+- trufa-maracuja.jpg
+- trufa-ninho-nutella.jpg
+- trufa-maracuja-nutella.jpg
+- barra-recheada.jpg
+- bombom-uva.jpg
+
+Dica: use imagens quadradas (1:1) ou levemente retangulares (4:3).
+Tamanho ideal: 600x600px ou maior.

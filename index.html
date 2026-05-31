@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yasmin Doces 🍫</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🍫</span>
+        <div>
+          <h1>Yasmin Doces</h1>
+          <p class="tagline">Feito com amor &amp; muito chocolate</p>
+        </div>
+      </div>
+      <button class="btn-header" onclick="abrirCarrinho()">
+        🛒 <span id="header-qtd" class="header-qtd oculto">0</span> Carrinho
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">✨ NOVIDADE ✨</div>
+    <h2 class="hero-title">Trufas &amp; Delícias<br/><span>Artesanais</span></h2>
+    <p class="hero-sub">Feitas com ingredientes selecionados, entregues com carinho 💕</p>
+    <a href="#produtos" class="btn-main">Ver todos os produtos</a>
+    <div class="hero-bubbles">
+      <span>🍫</span><span>🍬</span><span>🍇</span><span>🥜</span><span>🥥</span>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section id="produtos" class="produtos">
+    <h2 class="section-title">Nosso Cardápio</h2>
+    <p class="section-sub">Adicione itens ao carrinho e finalize pelo WhatsApp! 🛒</p>
+
+    <!-- TRUFAS -->
+    <div class="categoria-label">🍬 Trufas Artesanais</div>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="imagens/trufa de ninho.jpeg" alt="Trufa de Ninho" class="card-img" onerror="this.parentElement.classList.add('no-img')"/>
+          <span class="card-img-fallback"></span>
+        </div>
+        <div class="card-body">
+          <h3>Trufa de Ninho</h3>
+          <p>Cremosa trufa com recheio de leite Ninho irresistível</p>
+          <div class="price">R$ 5,00</div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Trufa de Ninho', 5.00, this)">+ Adicionar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="imagens/trufa paçoca.jpeg" alt="Trufa de Paçoca" class="card-img" onerror="this.parentElement.classList.add('no-img')"/>
+          <span class="card-img-fallback"></span>
+        </div>
+        <div class="card-body">
+          <h3>Trufa de Paçoca</h3>
+          <p>Recheio de paçoca crocante com cobertura de chocolate</p>
+          <div class="price">R$ 5,00</div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Trufa de Paçoca', 5.00, this)">+ Adicionar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="imagens/trufa brigadeiro.jpeg" alt="Trufa de Brigadeiro" class="card-img" onerror="this.parentElement.classList.add('no-img')"/>
+          <span class="card-img-fallback"></span>
+        </div>
+        <div class="card-body">
+          <h3>Trufa de Brigadeiro</h3>
+          <p>O clássico brasileiro em versão trufa gourmet</p>
+          <div class="price">R$ 5,00</div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Trufa de Brigadeiro', 5.00, this)">+ Adicionar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="imagens/trufa coco.jpeg" alt="Trufa de Coco" class="card-img" onerror="this.parentElement.classList.add('no-img')"/>
+          <span class="card-img-fallback"></span>
+        </div>
+        <div class="card-body">
+          <h3>Trufa de Coco</h3>
+          <p>Tropical e deliciosa com coco ralado no recheio</p>
+          <div class="price">R$ 5,00</div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Trufa de Coco', 5.00, this)">+ Adicionar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="imagens/trufa maracuja.jpeg" alt="Trufa de Maracujá" class="card-img" onerror="this.parentElement.classList.add('no-img')"/>
+          <span class="card-img-fallback"></span>
+        </div>
+        <div class="card-body">
+          <h3>Trufa de Maracujá</h3>
+          <p>Azedinho e doce, combinação perfeita com chocolate</p>
+          <div class="price">R$ 5,00</div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Trufa de Maracujá', 5.00, this)">+ Adicionar</button>
+        </div>
+      </div>
+
+      <div class="card destaque">
+        <div class="badge-destaque">⭐ Especial</div>
+        <div class="card-img-wrap">
+          <img src="imagens/trufa ninho com nt.jpeg" alt="Trufa Ninho Nutella" class="card-img" onerror="this.parentElement.classList.add('no-img')"/>
+          <span class="card-img-fallback"></span>
+        </div>
+        <div class="card-body">
+          <h3>Trufa Ninho + Nutella</h3>
+          <p>A dupla favorita: leite Ninho com Nutella cremosa</p>
+          <div class="price">R$ 7,00</div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Trufa Ninho com Nutella', 7.00, this)">+ Adicionar</button>
+        </div>
+      </div>
+
+      <div class="card destaque">
+        <div class="badge-destaque">⭐ Especial</div>
+        <div class="card-img-wrap">
+          <img src="imagens/trufa maracuja nut.jpeg" alt="Trufa Maracujá Nutella" class="card-img" onerror="this.parentElement.classList.add('no-img')"/>
+          <span class="card-img-fallback"></span>
+        </div>
+        <div class="card-body">
+          <h3>Maracujá + Nutella</h3>
+          <p>Maracujá tropical com a irresistível Nutella</p>
+          <div class="price">R$ 7,00</div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Trufa Maracujá com Nutella', 7.00, this)">+ Adicionar</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- NOVIDADES -->
+    <div class="categoria-label" style="margin-top:2.5rem;">🎉 Novidades</div>
+    <div class="grid">
+
+      <div class="card novidade card-wide">
+        <div class="badge-novidade">🆕 Novidade</div>
+        <div class="card-img-wrap">
+          <img src="imagens/barra chocolate.jpeg" alt="Barra Recheada" class="card-img" onerror="this.parentElement.classList.add('no-img')"/>
+          <span class="card-img-fallback"></span>
+        </div>
+        <div class="card-body">
+          <h3>Barra Recheada</h3>
+          <p>Barra de chocolate artesanal — escolha o recheio!</p>
+          <div class="price">R$ 40,00</div>
+          <div class="btn-group">
+            <button class="btn-comprar" onclick="adicionarAoCarrinho('Barra Recheada Ninho com Nutella', 40.00, this)">🐦 Ninho + Nutella</button>
+            <button class="btn-comprar btn-sm" onclick="adicionarAoCarrinho('Barra Recheada Maracujá com Nutella', 40.00, this)">🍊 Maracujá + Nutella</button>
+            <br><br>
+          </div>
+        </div>
+      </div>
+
+      <div class="card novidade">
+        <div class="badge-novidade">🆕 Novidade</div>
+        <div class="card-img-wrap">
+          <img src="imagens/uva travessa.jpeg" alt="Bombom de Uva" class="card-img" onerror="this.parentElement.classList.add('no-img')"/>
+          <span class="card-img-fallback"></span>
+        </div>
+        <div class="card-body">
+          <h3>Bombom de Uva</h3>
+          <p>Uvas frescas envolvidas em chocolate — duas opções de tamanho!</p>
+          <div class="price-flex">
+            <span>200ml — R$ 12,00</span>
+            <span>100ml — R$ 7,00</span>
+          </div>
+          <div class="btn-group">
+            <button class="btn-comprar" onclick="adicionarAoCarrinho('Bombom de Uva 200ml', 12.00, this)">+ 200ml</button>
+            <button class="btn-comprar btn-sm" onclick="adicionarAoCarrinho('Bombom de Uva 100ml', 7.00, this)">+ 100ml</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div style="height:90px;"></div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>💕 Feito com amor — Yasmin Doces</p>
+    <p>Atendimento via <strong>WhatsApp</strong> — pedidos confirmados na hora!</p>
+  </footer>
+
+  <!-- BARRA CARRINHO RODAPÉ -->
+  <div id="carrinho-bar" class="carrinho-bar oculto">
+    <div class="carrinho-bar-inner" onclick="abrirCarrinho()">
+      <div class="cbar-left">
+        <span class="cbar-icon">🛒</span>
+        <span id="cbar-qtd">0 itens</span>
+      </div>
+      <div class="cbar-center">Ver carrinho</div>
+      <div class="cbar-right">
+        <strong id="cbar-total">R$ 0,00</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL CARRINHO -->
+  <div id="carrinho-overlay" class="modal-overlay" onclick="fecharCarrinhoOverlay(event)">
+    <div class="modal carrinho-modal">
+      <button class="modal-close" onclick="fecharCarrinho()">✕</button>
+      <h3 class="carrinho-titulo">🛒 Seu Carrinho</h3>
+
+      <div id="carrinho-lista" class="carrinho-lista"></div>
+
+      <div id="carrinho-vazio" class="carrinho-vazio">
+        <span>😔</span>
+        <p>Seu carrinho está vazio!</p>
+        <button onclick="fecharCarrinho()" class="btn-comprar" style="width:auto;padding:.5rem 1.5rem;margin-top:.5rem;">Ver produtos</button>
+      </div>
+
+      <div id="carrinho-resumo" class="carrinho-resumo">
+        <div class="resumo-linha">
+          <span>Total</span>
+          <strong id="resumo-subtotal">R$ 0,00</strong>
+        </div>
+
+        <div class="modal-campo" style="margin-top:1rem;">
+          <label>Forma de pagamento</label>
+          <div class="pagamento-opcoes">
+            <label class="pag-opt"><input type="radio" name="pagamento" value="PIX" checked/><span>💸 PIX</span></label>
+            <label class="pag-opt"><input type="radio" name="pagamento" value="Dinheiro"/><span>💵 Dinheiro</span></label>
+            <label class="pag-opt"><input type="radio" name="pagamento" value="Cartão de Débito"/><span>💳 Débito</span></label>
+            <label class="pag-opt"><input type="radio" name="pagamento" value="Cartão de Crédito"/><span>💳 Crédito</span></label>
+          </div>
+        </div>
+
+        <div class="modal-campo">
+          <label>Seu nome</label>
+          <input type="text" id="input-nome" placeholder="Ex: Maria"/>
+        </div>
+
+        <div class="modal-campo">
+          <label>Observação (opcional)</label>
+          <input type="text" id="input-obs" placeholder="Ex: sem coco, embrulho presente..."/>
+        </div>
+
+        <button class="btn-whatsapp" onclick="enviarWhatsApp()">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Finalizar pelo WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
